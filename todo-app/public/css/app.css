@@ -15,15 +15,10 @@ h1 {
 
 body {
     background: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 #overlay {
-    -o-animation: colorcycle 20s infinite;
-    -moz-animation: colorcycle20s infinite;
     -webkit-animation: colorcycle 20s infinite;
     animation: colorcycle 20s infinite;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -31,42 +26,6 @@ body {
     -moz-opacity: 0.5;
     -khtml-opacity: 0.5;
     opacity: 0.5;
-}
-
-@-o-keyframes colorcycle {
-    0% {
-        background: #a24de3;
-    }
-    25% {
-        background: #00aeff;
-    }
-    50% {
-        background: #f45a4a;
-    }
-    75% {
-        background: #4fd1cd;
-    }
-    100% {
-        background: #a24de3;
-    }
-}
-
-@-moz-keyframes colorcycle {
-    0% {
-        background: #a24de3;
-    }
-    25% {
-        background: #00aeff;
-    }
-    50% {
-        background: #f45a4a;
-    }
-    75% {
-        background: #4fd1cd;
-    }
-    100% {
-        background: #a24de3;
-    }
 }
 
 @-webkit-keyframes colorcycle {
@@ -105,32 +64,8 @@ body {
     }
 }
 
-header,
-main {
+header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-header h1 {
-    /* color: #ffffff; */
-    font-family: 'Raleway', sans-serif;
-    font-size: 62px;
-    font-weight: 800;
-    line-height: 72px;
-    margin: 0 0 24px;
-    text-align: center;
-    text-transform: uppercase;
-    background: white;
-}
-
-#center {
-    position: absolute;
-    top: 5%;
-}
-
-main {
-    margin: 0 50px;
-    background: white;
-    padding: 5px 15px;
 }
